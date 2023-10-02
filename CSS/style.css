@@ -27,6 +27,7 @@
     /* debug */
     border: 1px solid black;
     background-color: bisque;
+    border-radius: 15px;
 }
 
 /* header */
