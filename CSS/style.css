@@ -233,4 +233,40 @@ header .row {
 
     
 
+    /* WHAT WE DO SECTION */
+
+    #what-we-do {
+        background-color: lightsalmon;
+    }
+
+    #what-we-do .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #what-we-do .col {
+        width: 100%;
+        
+    }
+
+    /* WHAT WE DO DESKTOP */
+
+    @media screen and (min-width: 1024px) {
+
+       #what-we-do .container {
+        width: 70%;
+        margin: 0 auto;
+       } 
+        #what-we-do .row {
+            flex-direction: row;
+        }
+
+        
+
+        
+    }
+
+
+    
+
 
