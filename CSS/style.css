@@ -45,7 +45,7 @@
 }
 
 .small {
-    padding:0.5rem 1.5rem
+    padding:0.5rem 1.5rem;
 }
 
 /* header */
@@ -99,49 +99,57 @@ header .row {
 
 /* header for desktop */
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     header {
         height: 5rem;
+        /* line-height: 2rem; */
+        /* text-align: middle; */
     }
-header .container {
-    align-content: ;
-}
 
+    header .row {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
     .menu-btn {
         display: none;
         
     }
 
-    .logo {
+    .row .logo {
         width: 50%;
+        border: 1px solid black;
     }
 
     .head-nav ul, li {
         list-style-type: none;
+        
     }
 
-    .row .head-nav {
+    .head-nav {
         width: 50%;
         display: flex;
         /* flex-direction: row;
         flex-wrap: nowrap; */
         justify-content: flex-end;
-       
-       
+        border: 1px solid black;
+        
     }
 
     .head-nav ul, li {
-        width: 50%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 2rem;
+        align-items: center;
+
         
-        
-       
     }
+
+
     
 }
+/* /header for desktop */
 
 
 /* /HEADER */
@@ -190,3 +198,7 @@ header .container {
 
     /* /HERO FOR TABLET */
   
+
+    /* HERO FOR DESKTOP */
+
+    
