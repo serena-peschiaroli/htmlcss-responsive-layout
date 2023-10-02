@@ -324,7 +324,7 @@ header .row {
 
     @media screen and (max-width: 1024px) {
 
-        #testimonial .row {
+        #testimonials .row {
             flex-direction: column;
             justify-content: center;
         }
@@ -519,6 +519,51 @@ header .row {
         /* /CALL TO ACTION SECTION */
 
 
+
+        /* FOOTER SECTION */
+
+#foot {
+    background-color: rgb(31, 30, 30);
+}
+
+#foot .row {
+    flex-direction: column;
+}
+
+#foot .col {
+    font-size: 0.8rem;
+    line-height: 0.8rem !important;
+    text-align: center;
+}
+
+#foot a {
+    text-decoration: underline;
+    color: rgb(211, 130, 238);
+}
+
+
+
+        /* footer tablet */
+
+@media screen and (min-width: 768px) {
+
+   
+    #foot .row {
+
+        justify-content: center;
+    }
+
+    #foot .col {
+        width: 95%;
+        justify-items: center;
+        margin: 0 auto;
+        
+    }
+
+    
+
+    
+}
 
     
 
