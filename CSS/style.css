@@ -259,12 +259,16 @@ header .row {
        } 
         #what-we-do .row {
             flex-direction: row;
+            justify-content: center;
         }
 
-        
+        #what-we-do .col {
+            width: 45%;
+        }
 
-        
     }
+
+    /* TESTIMONIAL SECTION */
 
 
     
