@@ -5,15 +5,7 @@
 }
 
 /* LAYOUT */
-header {
-    background-color: azure;
-    border: 1px solid black;
-    padding-bottom: 1rem;
-    padding-top: 1rem
 
-    
-
-}
 
 .container {
     width: 90%;
@@ -36,6 +28,18 @@ header {
     border: 1px solid black;
     background-color: bisque;
 }
+
+/* header */
+header {
+    background-color: azure;
+    border: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 1rem
+
+    
+
+}
+
 
 /* Hamburger button */
 .menu-btn {
@@ -61,6 +65,10 @@ header {
   }
   /* /Hamburger button */
 
+  header .container {
+    padding: 0
+  }
+/* /HEADER */
 
   /* HERO */
 
