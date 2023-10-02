@@ -21,6 +21,18 @@ img {
 
 }
 
+/* CONTAINER FOR DESKTOP */
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+/* /CONTAINER FOR DESKTOP */
+
 
 
 .row {
@@ -110,10 +122,6 @@ header .row {
 
 @media screen and (min-width: 1024px) {
 
-    header .container {
-        width: 70%;
-        margin: 0 auto;
-    }
 
     header {
         height: 5rem;
@@ -221,18 +229,6 @@ header .row {
 
     /* /HERO FOR TABLET */
   
-
-    /* HERO FOR DESKTOP */
-
-    @media screen and (min-width: 1024px) {
-        #hero-sect .container {
-            width: 70%;
-            margin: 0 auto;
-        }
-    }
-
-    
-
     /* WHAT WE DO SECTION */
 
     #what-we-do {
@@ -249,14 +245,28 @@ header .row {
         
     }
 
+    /* WHAT WE DO TABLET  */
+
+    @media screen and (max-width: 768px) {
+        #what-we-do .row {
+            flex-direction: column;
+        }
+
+        #what-we-do .col {
+            
+            width: 95%;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+    }
+    /* WHAT WE DO TABLET  */
+
+
     /* WHAT WE DO DESKTOP */
 
     @media screen and (min-width: 1024px) {
 
-       #what-we-do .container {
-        width: 70%;
-        margin: 0 auto;
-       } 
         #what-we-do .row {
             flex-direction: row;
             justify-content: center;
@@ -269,6 +279,120 @@ header .row {
     }
 
     /* TESTIMONIAL SECTION */
+
+    #testimonials .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    /* testimonial for tablet */
+
+    @media screen and (min-width: 768px) {
+        #testimonial
+        
+    }
+
+    /* /testimonial for tablet */
+
+    /* testimonial for desktop */
+
+    @media screen and (max-width: 1024px) {
+
+        #testimonial .row {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+
+        #testimonials .col {
+            width: 95%;
+            justify-content: center;
+            margin: 0 auto;
+            
+        }
+
+    
+    }
+    /* /testimonial for desktop */
+
+
+
+    /* benefits section */
+
+    #benefits {
+        background-color: lightsalmon;
+    }
+
+    #benefits .row {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    #benefits .row .col:first-child {
+        text-align: center;
+    }
+
+    /* benefits section tablet */
+
+    @media screen and (min-width: 768px) {
+
+        #benefits .row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+        }
+
+        #benefits .col {
+            width: calc(100% / 2 - 1rem)
+        }
+
+       #benefits .row .col:first-child {
+            width: 100%;
+            background-color: lightsalmon;
+            border: none;
+            text-align: center;
+       } 
+
+
+        
+    }
+
+      /* /benefits section tablet */
+
+        /* benefits section deskot */
+    @media screen and (min-width: 1024px) {
+
+        #benefits .row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+        }
+
+        #benefits .col {
+            width: calc(100% / 3 - 1.5rem)
+        }
+
+       #benefits .row .col:first-child {
+            width: 100%;
+            background-color: lightsalmon;
+            border: none;
+            text-align: center;
+       } 
+
+
+        
+    }
+
+        /* /benefits section deskot */
+
+
+
+
 
 
     
