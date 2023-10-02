@@ -8,11 +8,17 @@
 
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    /* debug */
+    border: 1px solid black;
 
 }
+
+
 
 .row {
     display: flex;
@@ -40,6 +46,11 @@ header {
 
     
 
+}
+
+header .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
@@ -75,10 +86,44 @@ header {
   /* HERO */
 
   #hero-sect .row {
-    display: block;
+    flex-direction: column;
   }
   #hero-sect .col {
     width: 100%;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
   }
+
+  /* HERO FOR TABLET */
+  @media screen and (min-width: 768px) {
+
+    #hero-sect .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: stretch;
+        justify-content:center ;
+        /* justify-content: space-around; */
+    }
+
+    #hero-sect .col {
+        width: calc(100% / 5)
+    }
+
+    #hero-sect .col:first-child {
+        width: 60%;
+    } 
+
+   
+
+    #hero-sect .col:nth-last-child(-n+4) {
+        width: 30%;
+    }
+
+
+    
+  }
+
+    /* /HERO FOR TABLET */
+  
