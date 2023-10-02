@@ -317,11 +317,7 @@ header .row {
 
     /* testimonial for tablet */
 
-    @media screen and (min-width: 768px) {
-        #testimonial
-        
-    }
-
+   
     /* /testimonial for tablet */
 
     /* testimonial for desktop */
@@ -450,7 +446,7 @@ header .row {
 
         #about-us h1 {
             text-align: left;
-            font-size: ;
+            
         }
 
         #about-us .row {
@@ -488,8 +484,39 @@ header .row {
 
     #cta .col {
         text-align: center;
+        
     }
 
+
+        /* CALL TO ACTION SECTION for tablet */
+@media screen and (min-width: 768px) {
+
+    #cta .row {
+        justify-content: center;
+       
+    }
+
+    
+}
+
+
+        /* CALL TO ACTION SECTION for desktop */
+
+@media screen and (min-width: 1024px) {
+
+    #cta .row {
+        justify-content: center;
+       
+    }
+
+    #cta .col {
+        width: 95%;
+        
+    }
+    
+}
+
+        /* /CALL TO ACTION SECTION */
 
 
 
