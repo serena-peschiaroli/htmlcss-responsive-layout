@@ -6,15 +6,19 @@
 
 /* LAYOUT */
 header {
-    width: 100%;
     background-color: azure;
     border: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 1rem
+
     
 
 }
 
 .container {
-    width: 80%
+    width: 95%;
+    margin: 0 auto;
+
 }
 
 .row {
@@ -48,3 +52,6 @@ header {
    
   }
   /* /Hamburger button */
+
+
+  /* HERO */
