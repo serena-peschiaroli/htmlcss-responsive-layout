@@ -189,11 +189,12 @@ header .row {
 
   #hero-sect .row {
     flex-direction: column;
+    justify-content: center;
   }
   #hero-sect .col {
-    width: 100%;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
+    width: 95%;
+    margin: .5rem;
+
   }
 
   /* HERO FOR TABLET */
@@ -210,7 +211,8 @@ header .row {
     }
 
     #hero-sect .col {
-        width: calc(100% / 5)
+        width: calc(100% / 5 );
+        
     }
 
     #hero-sect .col:first-child {
@@ -236,13 +238,13 @@ header .row {
     }
 
     #what-we-do .row {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
+       
     }
 
     #what-we-do .col {
-        width: 100%;
-        
+       width: 95%;
     }
 
     /* WHAT WE DO TABLET  */
@@ -331,6 +333,11 @@ header .row {
         justify-content: center;
     }
 
+    #benefits .col {
+        width: 95%;
+        margin: .5rem;
+    }
+
     #benefits .row .col:first-child {
         text-align: center;
     }
@@ -347,7 +354,7 @@ header .row {
         }
 
         #benefits .col {
-            width: calc(100% / 2 - 1rem)
+            width: calc(100% / 2 - 1.5rem)
         }
 
        #benefits .row .col:first-child {
