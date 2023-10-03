@@ -27,6 +27,10 @@ img {
     width: 100%;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;;
+}
+
 .bg-lilac {
     background-color: var(--secondary-col);
 }
@@ -45,16 +49,16 @@ main h1, h2, h3, h4, h5, h6, p {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 
 .container-s {
-    width: 95%;
+    width: 90%;
     max-width: 800px;
     margin: 0 auto;
     padding-top: 1.5rem;
@@ -107,9 +111,9 @@ main h1, h2, h3, h4, h5, h6, p {
 }
 
 .large {
-    width: 4rem;
-    height: 3rem;
-    padding: 0.8rem 3rem;
+    /* width: 50%;
+    height: 20%; */
+    padding: 0.8rem .5rem;
 
 }
 
@@ -225,10 +229,25 @@ header .row {
 
 #hero-sect h2 {
     color: var(--primary-col);
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    font-size: 1.9rem;
+    font-weight: bolder;
 }
+
+#hero-sect p {
+    margin-bottom: 1.5rem;
+    color: var(--dark-gray);
+    font-weight: bold;
+
+}
+
 
 #hero-sect .col {
     background-color: var(--primary-col-light);
+    color: var(--dark-gray);
+    justify-content: center;
+    text-align: center;
 }
 
 #hero-sect p {
@@ -238,6 +257,11 @@ header .row {
 #hero-sect .btn {
     margin-left: 2rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
     
 }
 
@@ -246,9 +270,23 @@ header .row {
     object-fit: contain;
     margin-top: 1rem;
     position: relative;
-    top:05%
+    top: 3%
     
 }
+
+#hero-sect .col {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#hero-sect .clean {
+    color: var(--primary-col);
+    font-size: 5rem;
+}
+
+
 
 
 
