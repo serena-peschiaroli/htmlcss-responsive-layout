@@ -1,3 +1,22 @@
+:root {
+
+    /* colors */
+  --primary-col: #0084fd;
+  --primary-col-light: #b5ddff;
+  --secondary-col: #9792e4;
+  --secondary-col-light: #d5d4f4;
+
+  /* commons */
+
+  --text-col: #111;
+  --white-col: #fff;
+  --dark-gray: #333;
+
+  --col-gap: 1rem;
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,39 +26,55 @@
 img {
     width: 100%;
 }
+
+.bg-lilac {
+    background-color: var(--secondary-col);
+}
+
 /* LAYOUT */
 
-a {
+header a {
     text-decoration: none;
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
+ main h1, h2, h3, h4, h5, h6, p {
     margin: 0.5;
     padding-bottom: 1rem;
     line-height: 2rem;
 }
 
 .container {
-    width: 90%;
+    width: 95%;
+    max-width: 900px;
     margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     /* debug */
     border: 1px solid black;
 
 }
 
+
+.container-s {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
 /* CONTAINER FOR DESKTOP */
 
 @media screen and (min-width: 1024px) {
-    .container {
+    /* .container {
         width: 70%;
         margin: 0 auto;
         padding-top: 2rem;
         padding-bottom: 2rem;
-    }
+    } */
 }
 /* /CONTAINER FOR DESKTOP */
 
@@ -47,6 +82,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify-between {
@@ -58,10 +94,10 @@ h1, h2, h3, h4, h5, h6, p {
     /* debug */
     border: 1px solid black;
     background-color: bisque;
-    width: 95%;
-    margin: 0.5rem;
+    width: 100%;
+    /* margin: 0.5rem; */
     border-radius: 15px;
-    padding:  1rem;
+    padding: 0.5rem 0.8rem;
 }
 
 .btn {
@@ -78,7 +114,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .lilac {
-    background-color: rgb(211, 130, 238);
+    background-color: var(--secondary-col)
     color: white;
 }
 
@@ -95,7 +131,8 @@ header {
     background-color: rgb(76, 126, 212);
     border: 1px solid black;
     padding-bottom: 1rem;
-    padding-top: 1rem
+    padding-top: 1rem;
+    
 
     
 
@@ -214,43 +251,46 @@ header .row {
 
   /* HERO */
 
-  #hero-sect .row {
-    flex-direction: column;
-    justify-content: center;
-  }
-  #hero-sect .col {
-    width: 95%;
-    margin: .5rem;
+  /* #hero-sect .row {
+    flex-wrap: wrap;
+  } */
+  /* #hero-sect .col {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
 
-  }
+  } */
 
   /* HERO FOR TABLET */
   @media screen and (min-width: 768px) {
 
-    #hero-sect .row {
+    #hero-sect {
+        --col-width: ((100% / 3) - (2 * var(--col-gap) / 3))
+    }
+
+   
+
+     #hero-sect .row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        align-items: stretch;
-        justify-content:center ;
-        /* justify-content: space-around; */
-    }
+        gap: var(--col-gap);
+        
+    }  
 
     #hero-sect .col {
-        width: calc(100% / 5 );
+        width: calc((100% / 3) - (2 * var(--col-gap)) / 3);
         
     }
 
     #hero-sect .col:first-child {
-        width: 60%;
+        width: calc( 2 * var(--col-width) + var(--col-gap) );
     } 
 
    
 
-    #hero-sect .col:nth-last-child(-n+4) {
+    /* #hero-sect .col:nth-last-child(-n+4) {
         width: 30%;
-    }
+    } */
 
 
     
@@ -271,19 +311,19 @@ header .row {
     }
 
     #what-we-do .col {
-       width: 95%;
+       width: 100%;
     }
 
     /* WHAT WE DO TABLET  */
 
     @media screen and (max-width: 768px) {
         #what-we-do .row {
-            flex-direction: column;
+            flex-wrap: wrap;
         }
 
         #what-we-do .col {
             
-            width: 95%;
+            width: 100%;
             justify-content: center;
             margin: 0 auto;
         }
