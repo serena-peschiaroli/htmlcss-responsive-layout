@@ -44,7 +44,7 @@ main a {
 
 main h1, h2, h3, h4, h5, h6, p {
     margin: 0.5;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     line-height: 1.5rem;
 }
 
@@ -168,7 +168,7 @@ header .row {
 
 /* header for desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
 
     header {
@@ -335,7 +335,7 @@ header .row {
         padding-bottom: 2rem;
     }
 
-    #what-we-do h2 {
+    #what-we-do .rigth h2 {
         color: var(--white-col);
         margin-bottom: 2rem;
         margin-top: 3rem;
@@ -343,7 +343,7 @@ header .row {
         font-weight: bolder;
     }
     
-    #what-we-do p {
+    #what-we-do .right p {
         color: var(--white-col);
         font-weight: bold;
         line-height: 1.5rem;
@@ -359,7 +359,6 @@ header .row {
 
     #what-we-do .round {
 
-     
         background-color: var(--secondary-col);
         border-radius: 50%;
         height: 60px;
@@ -374,17 +373,27 @@ header .row {
         top: 0.9rem;
     }
 
-    #what-we-do .col:nth-child(2) {
+    #what-we-do .right {
         background-color: var(--white-col);
         
     }
 
-    #what-we-do h2:nth-child(2) {
+    #what-we-do .left {
+        background-color: var(--secondary-col);
+        
+    }
+
+    #what-we-do .right h2 {
         color: var(--text-col);
     }
 
-    #what-we-do p:nth-child(3) {
+    #what-we-do .right p {
         color: var(--text-col);
+        font-style: italic;
+    }
+
+    #what-we-do .right {
+        border-radius: 80px;
     }
 
 
@@ -392,33 +401,60 @@ header .row {
 
     /* WHAT WE DO TABLET  */
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         #what-we-do .row {
             flex-wrap: wrap;
         }
 
-        #what-we-do .col {
-            
+        #what-we-do img {
             width: 100%;
-            justify-content: center;
             margin: 0 auto;
         }
+
+        #what-we-do .left h2 {
+            font-size: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #what-we-do .left {
+            text-align: left;
+        }
+
+       
         
     }
-    /* WHAT WE DO TABLET  */
+    /* /WHAT WE DO TABLET  */
 
 
     /* WHAT WE DO DESKTOP */
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 992px) {
 
         #what-we-do .row {
             flex-direction: row;
-            justify-content: center;
+        
+            flex-wrap: nowrap;
         }
 
         #what-we-do .col {
-            width: 45%;
+            width: calc((100% / 2 ) - 1rem );
+            align-self: baseline;
+        }
+
+        #what-we-do .left h2{
+            font-size: 2rem;
+            font-weight: bolder;
+
+        }
+
+        #what-we-do .right img {
+            width: 70%;
+
+        }
+
+        #what-we-do .right {
+            height: 80%;
+            align-content: flex-end;
         }
 
     }
@@ -438,7 +474,7 @@ header .row {
 
     /* testimonial for desktop */
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 992px) {
 
         #testimonials .row {
             flex-direction: column;
@@ -510,7 +546,7 @@ header .row {
       /* /benefits section tablet */
 
         /* benefits section deskot */
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 992px) {
 
         #benefits .row {
             flex-direction: row;
@@ -580,7 +616,7 @@ header .row {
 
     /* ABOUT US SECTION FOR DESKTOP */
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 992px) {
 
         #about-us .row .col {
             width: calc(90% / 2)
@@ -618,7 +654,7 @@ header .row {
 
         /* CALL TO ACTION SECTION for desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
     #cta .row {
         justify-content: center;
