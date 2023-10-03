@@ -480,7 +480,7 @@ header .row {
         border-radius: 80px;
         justify-content: center;
         text-align: center;
-        padding: 1.8rem 1rem;
+        padding: 2rem 1rem;
         color: var(--white-col);
     }
 
@@ -504,7 +504,7 @@ header .row {
         height: 200px;
         object-fit: cover;
         border-radius: 50%;
-        margin-bottom: 1rem;
+        margin: 1rem 0.5;
     }
 
     #testimonial .quote {
@@ -580,9 +580,7 @@ header .row {
 
     /* benefits section */
 
-    #benefits {
-        background-color: lightsalmon;
-    }
+   
 
     #benefits .row {
         flex-direction: column;
@@ -590,14 +588,27 @@ header .row {
         justify-content: center;
     }
 
-    #benefits .col {
-        width: 95%;
-        margin: .5rem;
+    #benefits .ben-title {
+        color: var(--white-col);
+        text-align: center;
+        font-size: 2rem;
+        line-height: normal;
+        font-weight: bold;
+        padding-bottom: 2rem;
     }
 
-    #benefits .row .col:first-child {
-        text-align: center;
+    #benefits .col {
+        background-color: var(--white-col);
+       
+        color: var(--secondary-col);
+        padding-bottom: 1rem;
     }
+
+    #benefits .col h1 {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
+
 
     /* benefits section tablet */
 
@@ -614,12 +625,7 @@ header .row {
             width: calc(100% / 2 - 1.5rem)
         }
 
-       #benefits .row .col:first-child {
-            width: 100%;
-            background-color: lightsalmon;
-            border: none;
-            text-align: center;
-       } 
+    
 
 
         
@@ -633,21 +639,15 @@ header .row {
         #benefits .row {
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 1rem;
             
             
         }
 
         #benefits .col {
-            width: calc(90% / 2)
+            width: calc(100% / 3 - 2rem);
+            
         }
-
-       #benefits .row .col:first-child {
-            width: 100%;
-            background-color: lightsalmon;
-            border: none;
-            text-align: center;
-       } 
-
 
         
     }
