@@ -357,6 +357,36 @@ header .row {
         text-align: center;
     }
 
+    #what-we-do .round {
+
+     
+        background-color: var(--secondary-col);
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    #what-we-do .clean {
+        color: var(--text-col);
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.9rem;
+    }
+
+    #what-we-do .col:nth-child(2) {
+        background-color: var(--white-col);
+        
+    }
+
+    #what-we-do h2:nth-child(2) {
+        color: var(--text-col);
+    }
+
+    #what-we-do p:nth-child(3) {
+        color: var(--text-col);
+    }
+
 
 
 
